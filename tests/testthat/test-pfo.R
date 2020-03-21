@@ -145,3 +145,9 @@ testthat::test_that("pfo diff and trades", {
                          list(list(instrument = "MSCI", trade_qty = -10.5, price = 1756),
                               list(instrument = "VIX", trade_qty = -20, price = 14)))
 })
+
+
+testthat::test_that("empty portfolio", {
+  pe <- pfo_init('USD', 0)
+  testthat::expect_length(pe, 0L)
+})

@@ -1,7 +1,7 @@
 Package: pfo
 Type: Package
 Title: Portfolio, Trades, Pricing
-Version: 0.0.0.1
+Version: 0.0.0.2
 Author: Panagiotis Cheilaris [aut, cre]
 Maintainer: Panagiotis Cheilaris <philaris@cs.ntua.gr>
 Description: Support for portfolios, trading, and pricing.

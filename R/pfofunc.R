@@ -15,7 +15,7 @@ pfo_init <- function(currency, init_cash) {
   assertthat::assert_that(assertthat::is.string(currency))
   assertthat::assert_that(assertthat::is.number(init_cash))
   lst <- list()
-  lst[[currency]] <- init_cash
+  if (!dplyr::near(init_cash, 0)) { lst[[currency]] <- init_cash }
   pfo_from_list(currency, lst)
 }
 
